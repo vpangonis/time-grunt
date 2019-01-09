@@ -1,10 +1,7 @@
-## Deprecated
-
-Deprecated because Grunt is practically unmaintained. Move on to something better. This package will continue to work with Grunt v1, but it will not receive any updates.
-
----
-
-# time-grunt [![Build Status](https://travis-ci.org/sindresorhus/time-grunt.svg?branch=master)](https://travis-ci.org/sindresorhus/time-grunt)
+# time-grunt
+[![NPM Version](https://img.shields.io/npm/v/@lodder/time-grunt.svg?style=flat)](https://npmjs.org/package/@lodder/time-grunt)
+[![Build Status](https://travis-ci.com/C-Lodder/time-grunt.svg?branch=master)](https://travis-ci.org/C-Lodder/time-grunt)
+[![Dependency Status](https://david-dm.org/C-Lodder/time-grunt.png)](https://david-dm.org/C-Lodder/time-grunt)
 
 > Display the elapsed execution time of [grunt](http://gruntjs.com) tasks
 
@@ -14,7 +11,7 @@ Deprecated because Grunt is practically unmaintained. Move on to something bette
 ## Install
 
 ```
-$ npm install --save-dev time-grunt
+$ npm i --save-dev @lodder/time-grunt
 ```
 
 
@@ -23,8 +20,8 @@ $ npm install --save-dev time-grunt
 ```js
 // Gruntfile.js
 module.exports = grunt => {
-	// require it at the top and pass in the grunt instance
-	require('time-grunt')(grunt);
+	// Require it at the top and pass in the grunt instance
+	require('@lodder/time-grunt')(grunt);
 
 	grunt.initConfig();
 }
@@ -48,7 +45,7 @@ require('time-grunt')(grunt, (stats, done) => {
 
 ## Clean layout
 
-The `watch` task and tasks that take less than 1% of the total time are hidden to reduce clutter.
+The `watch` task is hidden to reduce clutter.
 
 Run grunt with `grunt --verbose` to see all tasks.
 

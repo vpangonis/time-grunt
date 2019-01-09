@@ -1,16 +1,14 @@
-'use strict';
+module.exports = grunt => {
+	// Tests
+	let match = false;
 
-module.exports = function (grunt) {
-	// tests
-	var match = false;
-
-	grunt.util.hooker.hook(process.stdout, 'write', function (str) {
+	grunt.util.hooker.hook(process.stdout, 'write', str => {
 		if (/Total/.test(str)) {
 			match = true;
 		}
 	});
 
-	require('./')(grunt);
+	require('.')(grunt);
 
 	grunt.registerTask('test', function () {
 		setTimeout(this.async(), 1200);
@@ -34,7 +32,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('testsigint', function () {
 		this.async();
-		setTimeout(function () {
+		setTimeout(() => {
 			process.emit('SIGINT');
 		}, 21);
 	});
@@ -57,7 +55,7 @@ module.exports = function (grunt) {
 		'testsigint'
 	]);
 
-	process.on('exit', function () {
+	process.on('exit', () => {
 		if (!match) {
 			process.exit(1);
 		}

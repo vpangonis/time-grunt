@@ -33,7 +33,7 @@ module.exports = grunt => {
 If you want to collect the timing stats for your own use, pass in a callback:
 
 ```js
-require('time-grunt')(grunt, (stats, done) => {
+require('@lodder/time-grunt')(grunt, (stats, done) => {
 	// do whatever you want with the stats
 	uploadReport(stats);
 

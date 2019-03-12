@@ -26,10 +26,10 @@
     "tasks"
   ],
   "dependencies": {
-    "date-time": "^2.1.0",
+    "date-time": "^3.0.0",
     "figures": "^2.0.0",
     "hooker": "^0.2.3",
-    "kleur": "^3.0.1",
+    "kleur": "^3.0.2",
     "pretty-ms": "^4.0.0",
     "text-table": "^0.2.0"
   },

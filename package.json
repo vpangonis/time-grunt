@@ -1,6 +1,6 @@
 {
   "name": "@lodder/time-grunt",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Display the elapsed execution time of grunt tasks",
   "license": "MIT",
   "repository": "C-Lodder/time-grunt",

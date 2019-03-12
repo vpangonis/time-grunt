@@ -42,6 +42,9 @@ require('@lodder/time-grunt')(grunt, (stats, done) => {
 });
 ```
 
+## Options
+- Run `grunt` with `--no-color` to disable any colour indicators in the terminal
+
 
 ## Clean layout
 

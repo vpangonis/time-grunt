@@ -1,9 +1,9 @@
 {
-  "name": "@lodder/time-grunt",
+  "name": "@vpangonis/time-grunt",
   "version": "4.0.0",
   "description": "Display the elapsed execution time of grunt tasks",
   "license": "MIT",
-  "repository": "C-Lodder/time-grunt",
+  "repository": "vpangonis/time-grunt",
   "engines": {
     "node": ">=6"
   },
